@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import './styles/index.css';
-import App, {loader as AppLoader} from './components/App';
+import Home, {loader as AppLoader} from './pages/home/Home.js';
+import Logement, {loader as LogementLoader} from './pages/logement/Logement';
 import Main from './layouts/main/Main';
-import ErrorPage from './components/Error';
+import ErrorPage from './pages/page-404/Error';
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,13 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <App/>,
+        element: <Home/>,
         loader: AppLoader
+      },
+      {
+        path:"logement/:id",
+        element: <Logement/>,
+        loader: LogementLoader
       }
     ],
     errorElement: <ErrorPage/>

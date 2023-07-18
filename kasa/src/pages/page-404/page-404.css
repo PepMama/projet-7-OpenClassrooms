@@ -1,0 +1,27 @@
+.app--error{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.error-number{
+    color: #FF6060;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 400px;
+}
+  
+  .error-txt{
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 36px;
+}
+  
+  .error-link{
+    color: #FF6060;
+    font-weight: 500;
+    margin: 70px auto;
+    text-decoration: underline;
+}

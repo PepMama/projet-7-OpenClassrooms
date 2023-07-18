@@ -12,6 +12,7 @@
 
 .main__body{
     grid-area: body;
+    margin: 40px 100px 0 100px;
 }
 
 .footer{
