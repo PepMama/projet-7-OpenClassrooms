@@ -1,5 +1,5 @@
-
 .thumb{
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 340px;
@@ -11,10 +11,18 @@
     padding: 10px;
 }
 
+.thumb__title{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 200px;
+}
+
 
 .thumb__image{
     object-fit: cover;
     border-radius: 10px;
     width: 340px;
     height: 340px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
 }

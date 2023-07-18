@@ -10,7 +10,6 @@ export default  function Main(){
         <>
             <Header/>
             <main className='main__body'>
-                
                 <Outlet/>
             </main>
             <Footer/>
