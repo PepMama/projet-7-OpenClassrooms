@@ -5,6 +5,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './styles/index.css';
 import Home, {loader as AppLoader} from './pages/home/Home.js';
 import Logement, {loader as LogementLoader} from './pages/logement/Logement';
+import About, {loader as AboutLoader} from './pages/about/About';
+
 import Main from './layouts/main/Main';
 import ErrorPage from './pages/page-404/Error';
 
@@ -17,6 +19,11 @@ const router = createBrowserRouter([
         path: "",
         element: <Home/>,
         loader: AppLoader
+      },
+      {
+        path: 'about',
+        element: <About/>,
+        loader: AboutLoader
       },
       {
         path:"logement/:id",

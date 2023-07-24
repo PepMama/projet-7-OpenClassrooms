@@ -5,17 +5,17 @@
     align-items: center;
     background: #FFF;
 }
-  
+
 .header > img {
     width: 210.322px;
     height: 68px;
     flex-shrink: 0;
 }
-  
+
 .header__links{
     display: flex;
 }
-  
+
 .header__link{
     display: flex;
     width: 116px;
@@ -30,7 +30,21 @@
     font-weight: 500;
     line-height: 142.6%;
 }
-  
+
 .header__link:hover{
     text-decoration: underline;
+}
+
+@media screen and (max-width: 425px ) {
+    .header{
+        padding: 40px 15px 0 15px;
+    }
+    .header > img {
+        width: 145px;
+        height: 47px;
+    }
+    .header__link{
+        width: 59px;
+        font-size: 12px;
+    }
 }

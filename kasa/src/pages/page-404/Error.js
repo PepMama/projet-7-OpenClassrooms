@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './page-404.css';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
@@ -10,14 +11,13 @@ export default function ErrorPage() {
         <main className="app--error">
           <p className = "error-number">404</p>
           <p className = "error-txt">Oups! La page que vous demandez n'existe pas.</p>
-            <a
+            <Link
               className="error-link"
-              href="#"
+              to={"/"}
               target="_blank"
-              rel="noopener noreferrer"
             >
               Retourner sur la page d’accueil
-            </a>
+            </Link>
         </main>
         <Footer/>
       </>

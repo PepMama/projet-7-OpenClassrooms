@@ -11,7 +11,7 @@ export default function Header(){
                 <Link className='header__link' to={"/"}>Accueil</Link>
             </li>
             <li>
-                <a className='header__link' href='#'>A Propos</a>
+                <Link className='header__link' to={"about"}>A Propos</Link>
             </li>
           </ul>
         </header>
