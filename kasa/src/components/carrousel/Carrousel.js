@@ -1,25 +1,21 @@
 import "./carrousel.css";
-// import { userState } from 'react';
+import { useState } from 'react';
+import backArrow from "../../assets/back-arrow.svg";
+import nextArrow from "../../assets/next-arrow.svg";
 
 export default function Carrousel({ images }){
+    const [imageIndex, setImageIndex ] = useState(0);
 
-    const sliderStyles = {
-        height: '100%',
-        position: 'relative'
-    }
-
-    const slideStyles = {
-        width: '100%',
-        height: '100%',
-        backgroundImage: 'url({image})'
+    function changeImage(signe){
+        setImageIndex(index=>(index + signe + images.length) % images.length);
     }
 
     return(
-        <div style={sliderStyles}>
-            {images.map((image, index) => (
-                // <img key={index} src={image} alt={images.title} />
-                <div key={index} style={slideStyles}></div>
-            ))}
+        <div className="carrousel">
+            <img src={backArrow} className="back" onClick={()=>changeImage(- 1)} alt="Retour en arrière"></img>
+            <img className="carrousel__image" src={images[imageIndex]} alt="" />
+            <img src={nextArrow} className="next" onClick={()=>changeImage(1)} alt=""></img>
+            <p className="carrousel__compteur">{imageIndex + 1}/{images.length}</p>
         </div>
     )
 }

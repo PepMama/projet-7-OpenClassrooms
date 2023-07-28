@@ -1,11 +1,13 @@
 import './dropdown.css';
-import arrow from '../../assets/arrow.svg'
+import arrow from '../../assets/arrow.svg';
+import {useState} from 'react';
 
 
 export default function Dropdown({ title, contenu }){
+    const [isOpen, setIsOpen] = useState(false);
     return(
-        <div className='dropdown'>
-            <div className='dropdown__header'>
+        <div className='dropdown' data-open={isOpen} >
+            <div className='dropdown__header' onClick={()=>setIsOpen(open=>!open)}>
                 <p className='dropdown__title'>{title}</p>
                 <img className='dropdown__arrow' src={arrow} alt='Flèche dropdown'></img>
             </div>

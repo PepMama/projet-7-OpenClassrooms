@@ -10,7 +10,7 @@ export default function About(){
         <>
             <Banner img={bannerAbout} text={""}/>
             <div className="about__dropdown">
-                {about.map((propos,index) => <Dropdown key={index} title={propos.title} contenu={propos.content}/> )}
+                <div className="dropdown__taille">{about.map((propos,index) => <Dropdown key={index} title={propos.title} contenu={propos.content}/> )}</div>
             </div>
         </>
         

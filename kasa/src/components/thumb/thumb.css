@@ -9,6 +9,9 @@
     border-radius: 10px;
     /* margin: 10px 20px; */
     padding: 10px;
+    margin: 10px auto;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 
@@ -30,8 +33,21 @@
 
 @media screen and (max-width: 425px) {
     .thumb{
+        width: 335px;
+        height: 255px;
+        flex-shrink: 0;
+        padding: 20px 0 20px 0;
+    }
+    .thumb__image{
         width: 100%;
-        /* height: 255px; */
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+    .thumb{
+        width: 225px;
+        height: 155px;
+        flex-shrink: 0;
         padding: 20px 0 20px 0;
     }
     .thumb__image{

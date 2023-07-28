@@ -48,3 +48,14 @@
         font-size: 12px;
     }
 }
+
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+    .header > img {
+        width: 145px;
+        height: 47px;
+    }
+    .header__link{
+        width: 100px;
+        font-size: 18px;
+    }
+}
