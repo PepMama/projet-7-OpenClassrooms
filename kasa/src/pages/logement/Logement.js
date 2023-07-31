@@ -3,9 +3,6 @@ import './logement.css';
 import Dropdown from "../../components/dropdown/Dropdown";
 import Tags from '../../components/tags/Tags'
 import Carrousel  from "../../components/carrousel/Carrousel";
-
-import stars from '../../assets/star.svg'
-
 export default function Logement(){
     const logements = useLoaderData();
     return (

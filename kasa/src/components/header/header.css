@@ -44,8 +44,9 @@
         height: 47px;
     }
     .header__link{
-        width: 59px;
+        width: 80px;
         font-size: 12px;
+        text-transform: uppercase;
     }
 }
 

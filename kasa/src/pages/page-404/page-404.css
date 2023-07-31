@@ -10,14 +10,12 @@
     color: #FF6060;
     font-size: 288px;
     font-weight: 700;
-    line-height: 142.6%;
 }
   
   .error-txt{
     color: #FF6060;
     font-weight: 500;
     font-size: 36px;
-    line-height: 142.6%;
     font-style: normal;
     text-align: center;
     font-family: Montserrat;
@@ -39,7 +37,6 @@
     color: #FF6060;
     font-size: 96px;
     font-weight: 700;
-    line-height: 142.6%;
   }
   .error-txt{
     text-align: center;
