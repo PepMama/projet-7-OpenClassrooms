@@ -74,10 +74,12 @@
 
 .container__stars{
     display: flex;
+    margin-top: 10px;
 }
 
 .logement__star{
-    height: 10px;
+    width: 2.25rem;
+    height: 2.25rem;
 }
 
 @media screen and (max-width: 425px){
@@ -111,6 +113,10 @@
         align-items: center;
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+    .logement__star{
+        width: 1.25rem;
+        height: 1.25rem;
     }
 }
 

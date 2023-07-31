@@ -11,7 +11,7 @@ export default function Home(){
         <>
         <Banner img={homeBanner} text={"Chez vous, partout et ailleurs"}/>
         <div className="home" >
-            {logements.map(logement => <Thumb logement={logement}/>)}
+            {logements.map(logement => <Thumb logement={logement} key={logement.id}/>)}
         </div>
         </>
     )

@@ -7,12 +7,12 @@ import Dropdown from "../../components/dropdown/Dropdown";
 export default function About(){
     const about = useLoaderData();
     return(
-        <>
+        <div className="about">
             <Banner img={bannerAbout} text={""}/>
             <div className="about__dropdown">
                 <div className="dropdown__taille">{about.map((propos,index) => <Dropdown key={index} title={propos.title} contenu={propos.content}/> )}</div>
             </div>
-        </>
+        </div>
         
     )
 }

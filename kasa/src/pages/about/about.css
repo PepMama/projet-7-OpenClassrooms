@@ -9,17 +9,27 @@
 .dropdown__taille{
     width: 1023px;
 }
+/* 
+.about .banner__container{
+    height: 220px;
+} */
 
 
 @media screen and (max-width: 425px){
     .dropdown__taille{
-        width: 335px;
+        width: 100%;
+    }
+    .about .banner__container{
+        height: 220px;
     }
 }
 
 
 @media screen and (min-width: 426px) and (max-width: 1023px) {
+    .about .banner__container{
+        height: 220px;
+    }
     .dropdown__taille{
-        width: 600px;
+        width: 100%;
     }
 }

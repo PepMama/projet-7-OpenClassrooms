@@ -2,12 +2,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 340px;
     height: 340px;
     color: #FFF;
     flex-shrink: 0;
     border-radius: 10px;
-    /* margin: 10px 20px; */
     padding: 10px;
     margin: 10px auto;
     background-size: cover;
@@ -26,14 +24,12 @@
 .thumb__image{
     object-fit: cover;
     border-radius: 10px;
-    width: 340px;
     height: 340px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
 }
 
 @media screen and (max-width: 425px) {
     .thumb{
-        width: 335px;
         height: 255px;
         flex-shrink: 0;
         padding: 20px 0 20px 0;
@@ -45,7 +41,6 @@
 
 @media screen and (min-width: 426px) and (max-width: 1023px) {
     .thumb{
-        width: 225px;
         height: 155px;
         flex-shrink: 0;
         padding: 20px 0 20px 0;

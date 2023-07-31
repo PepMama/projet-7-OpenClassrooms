@@ -14,7 +14,6 @@ export default function ErrorPage() {
             <Link
               className="error-link"
               to={"/"}
-              target="_blank"
             >
               Retourner sur la page d’accueil
             </Link>

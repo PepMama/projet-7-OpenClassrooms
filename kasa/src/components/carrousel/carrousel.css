@@ -11,18 +11,16 @@
 
 .back{
     position: absolute;
-    width: 46.68px;
-    height: 79.2px; 
-    left: 0%;
+    width: 46px;
+    left: 20px;
     top: 50%;
     transform: translate(0%, -50%);
 }
 
 .next{
     position: absolute;
-    width: 46.68px;
-    height: 79.2px; 
-    right: 0%;
+    width: 46px;
+    right: 20px;
     top: 50%;
     transform: translate(0%, -50%);
 }
@@ -38,7 +36,6 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%;
 }
 
 @media screen and (max-width: 425px) {
